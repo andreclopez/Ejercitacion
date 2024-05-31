@@ -30,6 +30,29 @@ alert("El valor ingresado equivale a " + temperaturaFahrenheit + " grados Fahren
 // válido. Utiliza una estructura condicional para mostrar en un 
 // `alert()` si la calificación es "Excelente," "Aprobado," o "Reprobado" según un rango de calificaciones.
 
+let valorNumerico = prompt("Ingrese un valor de 0 al 100")
+
+let calificacion 
+
+if (calificacion >= 60 && calificacion < 99) {
+    
+        alert("Aprobado")
+
+    }else {
+
+        alert("Reprobado")
+    } 
+
+    if (calificacion == 100) {
+
+        alert("Excelente")
+    }
+
+    if (calificacion > 100 && califiacion < 0) {
+
+        alert("Ingrese una calificación válida")
+    }
+
 // 4. Pídele al usuario mediante `prompt()` que ingrese un valor 
 // numérico entre 1 y 7, y guarda en una variable llamada 
 // `diaSemana` su equivalente en palabras (1 == lunes, 2 ==
