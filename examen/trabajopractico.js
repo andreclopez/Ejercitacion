@@ -46,10 +46,7 @@ if (calificacion == 100) {
 
         alert("Reprobado")
         
-    } else {
-
-        alert("Ingrese una calificación válida")
-    }
+    } 
 
 // 4. Pídele al usuario mediante `prompt()` que ingrese un valor 
 // numérico entre 1 y 7, y guarda en una variable llamada 
