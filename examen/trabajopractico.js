@@ -53,7 +53,48 @@ if (calificacion == 100) {
 // `diaSemana` su equivalente en palabras (1 == lunes, 2 ==
 // martes, etc). Valida que el valor ingresado sea un número válido.
 // Utiliza una declaración `switch` para mostrar un mensaje amigable
-// y entendible, que indique si es un "Día laboral" o "Fin de semana" en función del valor de `diaSemana`.
+// y entendible, que indique si es un "Día laboral" o "Fin de semana" 
+// en función del valor de `diaSemana`.
+
+let valorNumerico= prompt("Ingrese un número entre el 1 y 7")
+
+let diaSemana = parseInt(valorNumerico);
+
+if (diaSemana < 1 || diaSemana > 7) {
+
+    alert("Por favor, ingrese un valor entre 1 y 7")
+
+} else {
+
+switch (diaSemana)
+
+{
+    case 1:
+
+    case 2:
+    
+    case 3:
+
+    case 4:
+
+    case 5:
+        alert("Es un día laboral")
+        break;
+
+    case 6:
+    
+    case 7:
+        alert("Es fin de semana")
+        break;
+
+    default:
+        alert("Intente nuevamente")    
+}
+
+}
+
+
+
 
 // 5. Pídele al usuario mediante `prompt()` que ingrese tres valores
 // numéricos que representen las longitudes de los lados de un 
