@@ -28,27 +28,25 @@ alert("El valor ingresado equivale a " + temperaturaFahrenheit + " grados Fahren
 // numérico entre 0 y 100, y guárdalo en una variable llamada 
 // `calificación`. Valida que el valor ingresado sea un número 
 // válido. Utiliza una estructura condicional para mostrar en un 
-// `alert()` si la calificación es "Excelente," "Aprobado," o "Reprobado" según un rango de calificaciones.
+// `alert()` si la calificación es "Excelente," "Aprobado," o 
+// "Reprobado" según un rango de calificaciones.
 
-let valorNumerico = prompt("Ingrese un valor de 0 al 100")
+let calificacion = prompt("Ingrese un valor de 0 al 100")
 
-let calificacion 
-
-if (calificacion >= 60 && calificacion < 99) {
+if (calificacion == 100) {
     
+        alert("Excelente")
+
+    } else if (calificacion >= 60 && calificacion <= 99) {
+
         alert("Aprobado")
-
-    }else {
-
-        alert("Reprobado")
     } 
 
-    if (calificacion == 100) {
+    if (calificacion < 60) {
 
-        alert("Excelente")
-    }
-
-    if (calificacion > 100 && califiacion < 0) {
+        alert("Reprobado")
+        
+    } else {
 
         alert("Ingrese una calificación válida")
     }
