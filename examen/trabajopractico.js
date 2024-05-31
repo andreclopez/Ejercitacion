@@ -93,13 +93,31 @@ switch (diaSemana)
 
 }
 
-
-
-
 // 5. Pídele al usuario mediante `prompt()` que ingrese tres valores
 // numéricos que representen las longitudes de los lados de un 
 // triángulo. Valida que los valores ingresados sean números válidos
 // y enteros positivos mayores que 0. Escribe una estructura
 // condicional para determinar si el triángulo es equilátero (todos
 // los lados iguales), isósceles (dos lados iguales), o escaleno 
-// (ningún lado igual). Muestra un mensaje amigable y entendible indicando el resultado.
+// (ningún lado igual). Muestra un mensaje amigable y entendible
+// indicando el resultado.
+
+let lado1 = prompt("Ingrese un valor para el lado 1 de un triángulo");
+
+let lado2 = prompt("Ingrese un valor para el lado 2 de un triángulo");
+
+let lado3 = prompt("Ingrese un valor para el lado 3 de un triángulo");
+
+if(lado1 == lado2 && lado2 == lado3){
+
+    alert("El triángulo es equilátero")
+}
+
+if(lado1 == lado2 || lado2 == lado3 || lado3 == lado1) {
+
+    alert("El triángulo es isósceles")
+
+}else{
+
+    alert("El triángulo es escaleno")
+}
